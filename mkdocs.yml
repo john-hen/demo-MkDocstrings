@@ -1,0 +1,33 @@
+docs_dir:  docs
+site_name: demo-MkDocstrings
+use_directory_urls: false
+
+nav:
+- index.md
+- overview.md
+- API:
+  - api/summary.md
+  - api/action.md
+  - api/actions.md
+  - api/classes.md
+
+theme:
+    name: material
+    highlightjs: true
+    hljs_languages:
+        - python
+
+plugins:
+- search
+- autorefs
+- mkdocstrings:
+    watch:
+    - package
+    handlers:
+        python:
+            import:
+              - https://docs.python.org/3/objects.inv
+
+markdown_extensions:
+  - pymdownx.superfences
+  - md_in_html
