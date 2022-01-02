@@ -1,5 +1,7 @@
-﻿"""Renders the documentation locally."""
+﻿"""Builds the documentation locally."""
 
 from subprocess import run
+from pathlib import Path
 
-process = run(['mkdocs', 'build', '--site-dir', 'HTML'])
+here = Path(__file__).parent
+process = run(['mkdocs', 'build', '--site-dir', 'HTML'], cwd=here)

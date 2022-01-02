@@ -14,9 +14,10 @@ as a top-level page, as we do in the Sphinx project. With MkDocs,
 the first page inside that section. As it documents the *public* API,
 not every doc-string defined in `package` needs to show up there,
 only the ones that are important. However, there is no equivalent for
-Sphinx's [Autosummary] extension, so we have to write that page by hand.
+Sphinx's [Autosummary] extension, so we have to create the summary
+ourselves.
 
-We can then link to objects from the API documentation, such as
+We can link to objects from the API documentation, such as
 [`Class1`](api/classes.md#package.classes.Class2) or
 [`action`](api/action.md). The syntax is
 ``[`Class1`](api/classes.md#package.classes.Class2)`` and
@@ -41,7 +42,7 @@ text, like [a `literal`](https://example.org). Because this is Markdown.
 This is a section inside the Overview chapter. We did not need to mark
 it as a possible link target, MkDocs creates header anchors automatically.
 
-Maybe it's time for a code example:
+Here is a code example:
 ```python
 from package.classes import Class1
 

@@ -1,10 +1,10 @@
 # Summary
 
 This is the front page for the API documentation. It uses the special
-directive `::: identifier` provided by MkDocstring.
+directive `::: identifier` provided by MkDocstrings.
 
 There is no equivalent for Sphinx's Autosummary, so we have to
-create the overview ourselves.
+create the summary ourselves.
 
 <table markdown="1"><tr><td>
     [`action`](action.md)
