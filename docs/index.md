@@ -11,8 +11,12 @@ Autodoc: [demo-Sphinx-autodoc].
 One difference we already encounter here, though it's not obvious
 from the rendered HTML page: The table of contents, and thus the side
 bar, is not defined in this very document, but in the `mkdocs.yml`
-configuration file. There is also no way to easily inspect the source
-of the pages, as there is with Sphinx.
+configuration file. Though we could define it in a separate Markdown
+file, like `nav.md` inside the `docs` folder, by means of the
+[MkDocs-literate-nav] plug-in.
+
+There is also no way to easily inspect the source of the pages, as there
+is with Sphinx.
 
 [![GitHub repo][GitHub badge]][GitHub repo]
 
@@ -22,3 +26,4 @@ of the pages, as there is with Sphinx.
 [demo-Sphinx-autodoc]: https://demo-Sphinx-autodoc.readthedocs.io
 [GitHub badge]:        https://img.shields.io/badge/GitHub-100000?logo=github
 [GitHub repo]:         https://github.com/john-hen/demo-MkDocstrings
+[MkDocs-literate-nav]: https://oprypin.github.io/mkdocs-literate-nav
