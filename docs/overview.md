@@ -53,12 +53,9 @@ class1 = Class1()
 class1.action()
 ```
 
-We used triple back-ticks (` ``` `) to mark the code block.
-
-It's not so clear (to me at least, at this point) how the syntax
-highlighting works. MkDocstrings depends on the Material theme for some
-reason, so it may not be as easy as it is in Sphinx to switch themes and
-highlighting styles.
+We used triple back-ticks (` ``` `) to mark the code block. The [syntax
+highlighting] is not theme-dependent, as it is in Sphinx, but can be
+customized if desired.
 
 [pages]:                    https://www.mkdocs.org/user-guide/writing-your-docs/#configure-pages-and-navigation
 [section index pages]:      https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#section-index-pages
@@ -71,3 +68,4 @@ highlighting styles.
 [Intersphinx]:              https://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html
 [linking]:                  https://www.mkdocs.org/user-guide/writing-your-docs/#linking-to-pages
 [Table of Contents]:        https://python-markdown.github.io/extensions/toc
+[syntax highlighting]:      https://mkdocstrings.github.io/theming/#syntax-highlighting
