@@ -23,15 +23,16 @@ We can link to objects from the API documentation, such as
 ``[`Class1`](api/classes.md#package.classes.Class2)`` and
 ``[`action`](api/action.md)``.
 
-[Intersphinx]-like support for references across projects is provided
-also by the MkDocstrings plug-in, not MkDocs itself. We get short-hand
-link targets to external documentation, like to Python's [`pathlib`][]
-module with just ``[`pathlib`][]``. Note the strange link syntax here.
-In MyST, we would use `[]()`-type links, not `[][]`. Even though it makes
-more sense to use `[][]` like MkDocstrings does, given that these are
-in fact reference links much like those in plain Markdown, it makes no
-sense whatsoever to have the link target in the place where we usually
-put the link text.
+[Intersphinx]-like support for [cross-references] to other projects
+is provided also by the MkDocstrings plug-in, not MkDocs itself. We get
+short-hand link targets to external documentation like to Python's
+[`pathlib`][] module with ``[`pathlib`][]``. The syntax here is
+different from MyST's, where we would write ``[`pathlib`](python:pathlib)``
+instead. MkDocstrings, perhaps more logically so, uses a [collapsed
+reference link] with an empty [link label], which is then taken to be
+the same as the [link text], stripped of inline mark-up, and looked
+up in the (Sphinx-generated) object inventory of other projects
+listed in the configuration file.
 
 As we see even from that last example, we can nest mark-up inside link
 text, like [a `literal`](https://example.org). Because this is Markdown.
@@ -57,9 +58,13 @@ highlighting works. MkDocstrings depends on the Material theme for some
 reason, so it may not be as easy as it is in Sphinx to switch themes and
 highlighting styles.
 
-[pages]:                https://www.mkdocs.org/user-guide/writing-your-docs/#configure-pages-and-navigation
-[section index pages]:  https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#section-index-pages
-[MkDocs-section-index]: https://oprypin.github.io/mkdocs-section-index
-[Autosummary]:          https://www.sphinx-doc.org/en/master/usage/extensions/autosummary.html
-[Intersphinx]:          https://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html
-[linking]:              https://www.mkdocs.org/user-guide/writing-your-docs/#linking-to-pages
+[pages]:                    https://www.mkdocs.org/user-guide/writing-your-docs/#configure-pages-and-navigation
+[section index pages]:      https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#section-index-pages
+[MkDocs-section-index]:     https://oprypin.github.io/mkdocs-section-index
+[cross-references]:         https://mkdocstrings.github.io/usage/#cross-references-to-other-projects-inventories
+[collapsed reference link]: https://spec.commonmark.org/0.30/#collapsed-reference-link
+[link label]:               https://spec.commonmark.org/0.30/#link-label
+[link text]:                https://spec.commonmark.org/0.30/#link-text
+[Autosummary]:              https://www.sphinx-doc.org/en/master/usage/extensions/autosummary.html
+[Intersphinx]:              https://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html
+[linking]:                  https://www.mkdocs.org/user-guide/writing-your-docs/#linking-to-pages
