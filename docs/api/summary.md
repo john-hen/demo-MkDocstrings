@@ -20,5 +20,8 @@ create the summary ourselves.
     Manual synopsis of module `classes`.
 </td></tr></table>
 
-This does not add them to the navigation in the side bar. We also
-have to do that manually, by editing `mkdocs.yml`.
+This does not add them to the navigation in the side bar. We have to do
+that manually, by editing `mkdocs.yml`, unless we make use of the
+[MkDocs-gen-files] plug-in and create these pages on the fly.
+
+[MkDocs-gen-files]: https://oprypin.github.io/mkdocs-gen-files
