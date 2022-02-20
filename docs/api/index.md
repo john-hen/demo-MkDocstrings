@@ -1,4 +1,4 @@
-# Summary
+# API
 
 This is the front page for the API documentation. It uses the special
 directive `::: identifier` provided by MkDocstrings.

@@ -9,7 +9,7 @@ nav:
 - index.md
 - overview.md
 - API:
-  - api/summary.md
+  - api/index.md
   - api/action.md
   - api/actions.md
   - api/classes.md
@@ -17,6 +17,8 @@ nav:
 theme:
   name: material
   highlightjs: true
+  features:
+    - navigation.indexes
   hljs_languages:
   - python
   icon:

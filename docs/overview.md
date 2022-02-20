@@ -8,14 +8,14 @@ inside the project's `docs` folder. So it is separate from the actual
 Python library in the, unimaginatively named, `package` folder. Both
 folders are right underneath the project's root in the repo.
 
-In the side bar navigation on the left, we cannot have the API summary
-as a top-level page, as we do in the Sphinx project. With MkDocs,
-["a section cannot have a page assigned to it"][pages]. So it is now
-the first page inside that section. As it documents the *public* API,
-not every doc-string defined in `package` needs to show up there,
-only the ones that are important. However, there is no equivalent for
-Sphinx's [Autosummary] extension, so we have to create the summary
-ourselves.
+With MkDocs alone, ["a section cannot have a page assigned to it"][pages],
+which is what we'd like to have for the API summary. But the Material
+for MkDocs theme offers [section index pages] as an option. With other
+themes, we could use the [MkDocs-section-index] plug-in. As the API
+section documents the *public* API, not every doc-string defined in
+`package` needs to show up there, only the ones that are important.
+However, there is no equivalent for Sphinx's [Autosummary] extension,
+so we have to write the summaries manually.
 
 We can link to objects from the API documentation, such as
 [`Class1`](api/classes.md#package.classes.Class2) or
@@ -57,7 +57,9 @@ highlighting works. MkDocstrings depends on the Material theme for some
 reason, so it may not be as easy as it is in Sphinx to switch themes and
 highlighting styles.
 
-[pages]:        https://www.mkdocs.org/user-guide/writing-your-docs/#configure-pages-and-navigation
-[Autosummary]:  https://www.sphinx-doc.org/en/master/usage/extensions/autosummary.html
-[Intersphinx]:  https://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html
-[linking]:      https://www.mkdocs.org/user-guide/writing-your-docs/#linking-to-pages
+[pages]:                https://www.mkdocs.org/user-guide/writing-your-docs/#configure-pages-and-navigation
+[section index pages]:  https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#section-index-pages
+[MkDocs-section-index]: https://oprypin.github.io/mkdocs-section-index
+[Autosummary]:          https://www.sphinx-doc.org/en/master/usage/extensions/autosummary.html
+[Intersphinx]:          https://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html
+[linking]:              https://www.mkdocs.org/user-guide/writing-your-docs/#linking-to-pages
