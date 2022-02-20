@@ -41,7 +41,9 @@ text, like [a `literal`](https://example.org). Because this is Markdown.
 ## First steps
 
 This is a section inside the Overview chapter. We did not need to mark
-it as a possible link target, MkDocs creates header anchors automatically.
+it as a possible link target, MkDocs [creates header anchors
+automatically][linking] via Python-Markdown's [Table of Contents]
+extension.
 
 Here is a code example:
 ```python
@@ -68,3 +70,4 @@ highlighting styles.
 [Autosummary]:              https://www.sphinx-doc.org/en/master/usage/extensions/autosummary.html
 [Intersphinx]:              https://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html
 [linking]:                  https://www.mkdocs.org/user-guide/writing-your-docs/#linking-to-pages
+[Table of Contents]:        https://python-markdown.github.io/extensions/toc
