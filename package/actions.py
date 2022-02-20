@@ -28,7 +28,12 @@ in the `api` folder underneath `docs`. It contains very little:
 MkDocstrings takes care of the rest and fills in the blanks, pulling
 in signatures and doc-strings from the package's source code. And
 it shows a box with the source code for each object. We cannot, however,
-look at the source code of the entire module, as with Autodoc.
+look at the source code of the entire module, as with Autodoc. (Though
+the [MkDocstrings-sourcelink] plug-in appears to be able to generate
+direct links back to the corresponding source code line in the original
+repository.)
+
+[MkDocstrings-sourcelink]: https://ai2business.github.io/mkdocstrings-sourcelink
 """
 
 
