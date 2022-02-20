@@ -16,7 +16,9 @@ file, like `nav.md` inside the `docs` folder, by means of the
 [MkDocs-literate-nav] plug-in.
 
 There is also no way to easily inspect the source of the pages, as there
-is with Sphinx.
+is with Sphinx. Though the edit button to the right of the title heading
+on each page was configured to link back to the corresponding source
+document in the GitHub repo.
 
 [![GitHub repo][GitHub badge]][GitHub repo]
 
